@@ -19,5 +19,14 @@
 <body>
     <h1>Hallo gaes saya agis saya beban rank</h1>
     <img src="profil.jpg" alt="">
+    
+    <p id='text'>memory dont working</p>
+    
+    <script>
+    const memory = process.memoryUsage().heapUsed
+    
+    const p = document.getElementById('text')
+    p.innerHTML = memory
+    </script>
 </body>
 </html>
